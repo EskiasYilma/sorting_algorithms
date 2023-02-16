@@ -16,10 +16,13 @@ void shell_sort(int *array, size_t size)
 	while (sp < size / 3)
 		sp = sp * 3 + 1;
 
-	while (sp > 0) {
-		for (i = sp; i < size; i++) {
+	while (sp > 0)
+	{
+		for (i = sp; i < size; i++)
+		{
 			temp = array[i];
-			for (j = i; j >= sp && array[j - sp] > temp; j -= sp) {
+			for (j = i; j >= sp && array[j - sp] > temp; j -= sp)
+			{
 				array[j] = array[j - sp];
 			}
 			array[j] = temp;
@@ -27,7 +30,8 @@ void shell_sort(int *array, size_t size)
 		sp /= 3;
 
 		printf("%d", array[0]);
-		for (i = 1; i < size; i++) {
+		for (i = 1; i < size; i++)
+		{
 			printf(", %d", array[i]);
 		}
 		printf("\n");
