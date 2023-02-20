@@ -32,4 +32,8 @@ int lamuto_partition(int *array, int low, int high, size_t size);
 void sort_partition(int *array, int low, int high, size_t size);
 void quick_sort(int *array, size_t size);
 
+void counting_sort(int *array, size_t size);
+void merge(int *array, int *left, size_t lsize, int *right, size_t rsize);
+void merge_sort(int *array, size_t size);
+
 #endif /* SORT_H */
