@@ -2,10 +2,10 @@
 
 /**
  * counting_sort - Sorts an array of integers in ascending order using the
- *                 Counting sort algorithm.
- *
+ * Counting sort algorithm.
  * @array: The array to be sorted.
  * @size:  The size of the array.
+ * Return: Nothing
  */
 void counting_sort(int *array, size_t size)
 {
